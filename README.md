@@ -1,9 +1,12 @@
-## Python in Systems Administration
+## Python in Systems Administration and Maintenance
 
-Practical examples of systems administrators’ use of python, which focus on how python not only makes essential things easier but also makes important things possible that solve specific problems that often arise in systems administration.
+Practical examples of using python to do good for systems administratration and maintenance, which focus on how python not only makes essential things easier but also makes important things possible that solve specific problems that often arise in systems administration and maintenance.
 
 ### Contributors:
-  * Sibiao Luo
+ * git repo : https://github.com/sibiaoluo/pysam
+ * user name: Sibiao Luo
+ * e-mail   : sibiaoluo@gmail.com
+ * address  : Beijing, China
 
 ### Examples lists:
   * ./get_51cto_coin/get_coin_from_51cto.py 
