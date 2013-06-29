@@ -6,9 +6,10 @@ Practical examples of systems administrators’ use of python, which focus on ho
   * Sibiao Luo
 
 ### Examples lists:
-  * 
+  * ./get_51cto_coin/get_coin_from_51cto.py 
 
 ### Examples Running:
-  *
+  * # python get_coin_from_51cto.py
+
 
 
