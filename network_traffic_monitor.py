@@ -44,5 +44,6 @@ if __name__ == '__main__':
             RX_RATE = round((RX - RX_O)/1024,3)
             TX_RATE = round((TX - TX_O)/1024,3)
             print RX_RATE ,'KB  ',TX_RATE ,'KB'
+
     except KeyboardInterrupt, e:
         print "\npyifstat exited"
