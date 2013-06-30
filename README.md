@@ -3,7 +3,7 @@
 Practical examples of using python to do good for systems administratration and maintenance, which focus on how python not only makes essential things easier but also makes important things possible that solve specific problems that often arise in systems administration and maintenance.
 
 #### Contributors:
- * git repo : https://github.com/sibiaoluo/pysam.git
+ * source   : https://github.com/sibiaoluo/pysam.git
  * user name: Sibiao Luo
  * e-mail   : sibiaoluo@gmail.com
  * address  : Beijing, China
@@ -21,6 +21,6 @@ Practical examples of using python to do good for systems administratration and 
 
   * ./process_VmRSS:MemTotal_show.py
 
-  
   * $ python port_checker_tcp.py -a localhost -p 90
 
+ 
