@@ -21,6 +21,8 @@ Practical examples of using python to do good for systems administratration and 
 
   * ./process_VmRSS:MemTotal_show.py
 
+  * ./memory_used_monitor.py
+
   * $ python port_checker_tcp.py -a localhost -p 90
 
  
