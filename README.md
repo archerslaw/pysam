@@ -1,4 +1,4 @@
-### Python in Systems Administration and Maintenance
+:s
 
 Practical examples of using python to do good for systems administratration and maintenance, which focus on how python not only makes essential things easier but also makes important things possible that solve specific problems that often arise in systems administration and maintenance.
 
@@ -24,8 +24,18 @@ Practical examples of using python to do good for systems administratration and 
   * ./memory_used_monitor.py
 
   * ./port_checker_tcp.py
-    $ python port_checker_tcp.py -a localhost -p 90
+    $ python port_checker_tcp.py -a localhost -p $port
   
   * ./disk_used_status.py
 
- 
+  * ./run_up_time.py
+
+  * ./wc-lwc-mutil-notext-directory.py
+
+  * ./network_traffic_monitor.py
+
+  * ./disk_used_status.py
+
+  * ./cpu_load_status.py
+
+  * ./cpu_monitor.py
