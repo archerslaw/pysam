@@ -26,5 +26,6 @@ Practical examples of using python to do good for systems administratration and 
   * ./port_checker_tcp.py
     $ python port_checker_tcp.py -a localhost -p 90
   
-  *
+  * ./disk_used_status.py
+
  
