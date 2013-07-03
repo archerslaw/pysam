@@ -1,6 +1,6 @@
-:s
+### Python for Systems Administratration and Maintenance:
 
-Practical examples of using python to do good for systems administratration and maintenance, which focus on how python not only makes essential things easier but also makes important things possible that solve specific problems that often arise in systems administration and maintenance.
+   Practical examples of using python to do good for systems administratration and maintenance, which focus on how python not only makes essential things easier but also makes important things possible that solve specific problems that often arise in systems administration and maintenance.
 
 #### Contributors:
  * source   : https://github.com/sibiaoluo/pysam.git
