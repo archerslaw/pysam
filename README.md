@@ -36,8 +36,6 @@
 
   * ./network_traffic_monitor.py
 
-  * ./disk_used_status.py
-
   * ./cpu_load_status.py
 
   * ./cpu_monitor.py
