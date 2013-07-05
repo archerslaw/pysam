@@ -39,3 +39,7 @@
   * ./cpu_load_status.py
 
   * ./cpu_monitor.py
+
+  * ./multi_get_first_letter.py
+
+  * ./send_mail_var_python.py
