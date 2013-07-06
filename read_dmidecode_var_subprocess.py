@@ -1,3 +1,10 @@
+#!/usr/bin/python
+#coding=utf-8
+
+'''
+通过subprocess读取dmidecode内容,
+System Information: Manufacturer, Product Name, Version, Serial Number, Family
+'''
 from subprocess import Popen, PIPE
 
 def getDMI():
