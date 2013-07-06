@@ -43,3 +43,6 @@
   * ./multi_get_first_letter.py
 
   * ./send_mail_var_python.py
+
+  * ./read_dmidecode_var_subprocess.py
+
