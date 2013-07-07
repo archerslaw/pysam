@@ -46,3 +46,6 @@
 
   * ./read_dmidecode_var_subprocess.py
 
+  * ./memcached_process_managerment.py
+    $ python memcached_process_managerment.py start|status|restart|stop
+
