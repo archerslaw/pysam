@@ -48,4 +48,5 @@
 
   * ./memcached_process_managerment.py
     $ python memcached_process_managerment.py start|status|restart|stop
-
+  
+  * ./read_ip_and_mac_var_subprocess.py
