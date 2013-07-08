@@ -50,3 +50,5 @@
     $ python memcached_process_managerment.py start|status|restart|stop
   
   * ./read_ip_and_mac_var_subprocess.py
+
+  * ./get_cpu_number_and_vendor.py
