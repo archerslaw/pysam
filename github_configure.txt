@@ -1,13 +1,19 @@
-- Create a new repository on the command line
+- Create a new repository on the command line:
 # touch README.md
 # git init
 # git add README.md
-# git commit -m "first commit"
+# git commit -m "add README for this project."
 # git remote add origin https://github.com/sibiaoluo/pysam.git
 # git push -u origin master
 
-- Push an existing repository from the command line
-# git remote add origin https://github.com/sibiaoluo/pysam.git
+- Push an existing repository from the command line:
+# mkdir pyxxx
+# cd pyxxx
+# git init
+# touch README.md
+# git add README.md
+# git commit -m "add README for this project."
+# git remote add origin https://github.com/sibiaoluo/pyxxx.git
 # git push -u origin master
 
 - Partial git user config:
@@ -17,6 +23,7 @@ pysam]# cat .git/config | tail -3
 [user]
     name = Sibiao Luo
     email = sibiaoluo@gmail.com
+
 - Global git user config:
 # git config --global user.name "Sibiao Luo"
 # git config --global user.email sluo@redhat.com
@@ -24,6 +31,7 @@ pysam]# cat .git/config | tail -3
 [user]
     name = Sibiao Luo
     email = sluo@redhat.com
+
 - The whole system config:
 $ sudo git config --system core.editor vim
 $ cat /etc/gitconfig
