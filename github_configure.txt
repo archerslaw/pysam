@@ -38,5 +38,122 @@ $ cat /etc/gitconfig
 [core]                                                                                                      
     editor = vim
 
+- Create/delete Branch:
+pycmdb]# ls -lh .git/refs/heads/master
+-rw-r--r-- 1 root root 41 Jul 11 22:51 .git/refs/heads/master
+pycmdb]# git checkout -b mybranch1
+Switched to a new branch 'mybranch1'
+
+pycmdb]# touch hello1
+pycmdb]# git add hello1
+pycmdb]# git commit -m "add hello1 for mark."
+[mybranch1 01f3fc3] add hello1 for mark.
+ 0 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello1
+pycmdb]# git push origin mybranch1
+Username: 
+Password: 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 268 bytes, done.
+Total 2 (delta 1), reused 0 (delta 0)
+To https://github.com/sibiaoluo/pycmdb.git
+ * [new branch]      mybranch1 -> mybranch1
+
+pycmdb]# git branch
+  master
+* mybranch1
+pycmdb]# git branch -r
+  origin/master
+  origin/mybranch1
+pycmdb]# git ls-remote
+From https://github.com/sibiaoluo/pycmdb.git
+102dcd1d166ed27b9b40d834e104b5e0b4a8044f    HEAD
+102dcd1d166ed27b9b40d834e104b5e0b4a8044f    refs/heads/master
+01f3fc3e7252769a2d879045af7d0c2b86a15c5d    refs/heads/mybranch1
+
+pycmdb]# git branch -d mybranch1
+error: Cannot delete the branch 'mybranch1' which you are currently on.
+pycmdb]# git checkout master
+Switched to branch 'master'
+pycmdb]# git branch
+* master
+  mybranch1
+pycmdb]# git branch -D mybranch1
+Deleted branch mybranch1 (was 01f3fc3).
+pycmdb]# git push origin :mybranch1
+Username: 
+Password: 
+To https://github.com/sibiaoluo/pycmdb.git
+ - [deleted]         mybranch1
+pycmdb]# git ls-remote
+From https://github.com/sibiaoluo/pycmdb.git
+102dcd1d166ed27b9b40d834e104b5e0b4a8044f    HEAD
+102dcd1d166ed27b9b40d834e104b5e0b4a8044f    refs/heads/master
+
+- Tag:
+pycmdb]# ls -lh .git/refs/tags/
+total 0
+1).# git tag <tagname> [<commit>] 
+2).# git tag -a <tagname> [<commit>]
+3).# git tag -s <tagname> [<commit>]
+e.g:
+pycmdb]# git tag -m "Tag on initial commit." mytag1 
+pycmdb]# git tag -m "Tag on new commit." mytag2
+pycmdb]# git tag mytag3
+
+pycmdb]# git tag -l -n1
+mytag1          Tag on initial commit.
+mytag2          Tag on new commit.
+mytag3          add hello1 for mark.
+pycmdb]# ls -lh .git/refs/tags/*
+-rw-r--r-- 1 root root 41 Jul 12 00:57 .git/refs/tags/mytag1
+-rw-r--r-- 1 root root 41 Jul 12 00:58 .git/refs/tags/mytag2
+-rw-r--r-- 1 root root 41 Jul 12 00:58 .git/refs/tags/mytag3
+
+pycmdb]# git push origin refs/tags/*
+Username: 
+Password: 
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 459 bytes, done.
+Total 4 (delta 2), reused 0 (delta 0)
+To https://github.com/sibiaoluo/pycmdb.git
+ * [new tag]         mytag1 -> mytag1
+ * [new tag]         mytag2 -> mytag2
+ * [new tag]         mytag3 -> mytag3
+
+pycmdb]# git tag -d mytag3
+Deleted tag 'mytag3' (was 4db002f)
+pycmdb]# git push origin :mytag3
+Username: 
+Password: 
+To https://github.com/sibiaoluo/pycmdb.git
+ - [deleted]         mytag3
+pycmdb]# git tag -d mytag1 mytag2
+Deleted tag 'mytag1' (was 0d9bdea)
+Deleted tag 'mytag2' (was 18913ea)
+pycmdb]# git push origin :mytag1 :mytag2
+Username: 
+Password: 
+To https://github.com/sibiaoluo/pycmdb.git
+ - [deleted]         mytag1
+ - [deleted]         mytag2
+
+-Github SSH Public Keys:
+1).User level Management.
+pycmdb]# ssh -T git@github.com
+The authenticity of host 'github.com (204.232.175.90)' can't be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,204.232.175.90' (RSA) to the list of known hosts.
+Hi sibiaoluo! You've successfully authenticated, but GitHub does not provide shell access.
+2).Project level Management.
+'github.com/sibiaoluo/pycmdb/'--->'Deploy Keys'
+$ ssh -i ~/.ssh/deploy-key -T git@github.com
+Hi sibiaoluo/pycmd! You've successfully authenticated, but GitHub does not provide shell access.
+
 Refference:
 http://gitbook.liuhui998.com/
