@@ -155,5 +155,32 @@ Hi sibiaoluo! You've successfully authenticated, but GitHub does not provide she
 $ ssh -i ~/.ssh/deploy-key -T git@github.com
 Hi sibiaoluo/pycmd! You've successfully authenticated, but GitHub does not provide shell access.
 
+-Collaborative Work with Github:
+1).'Fork + Pull' Distributed Operating Mode:
+    Fork & Pull Request & Online Editing.
+    No ISSUE of the Origin.
+Pull Request--->"Commits"--->"Files Changed"--->"Preview Discussion"(write the subject and context)--->"Send Pull Request"--->'close & comment' OR 'Comment this Pull Request' OR 'This pull request can be automatically merge'--->'Merge pull request'--->'Confirm Merge'
+
+2).Traditional centralized collaborative work mode.
+Project Repo-->'Collaborators'
+$ git fetch
+$ git merge
+git pull = git fetch + git merge: $ git pull
+($ git reset --hard)
+$ git push
+
+$ git fetch origin
+$ git rebase origin/master
+$ git push
+
+$ git pull --rebase OR $ git config branch.master.rebase true OR $ git config --global branch.autosetuprebase true
+
+-Bug Tracking:
+Issues / Pull Request / label
+
+-Milestones:
+Sprint / tag / branch
+
+
 Refference:
 http://gitbook.liuhui998.com/
