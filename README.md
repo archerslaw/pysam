@@ -53,4 +53,6 @@
 
   * ./get_cpu_number_and_vendor.py
   
-  *
+  * ./paramiko-ssh.py
+
+  * ./paramiko-sshport.py
