@@ -56,3 +56,9 @@
   * ./paramiko-ssh.py
 
   * ./paramiko-sshport.py
+
+  * ./paramiko-nopasswdSSH.py
+
+  * ./paramiko-multi-nopasswdSSH.py
+
+  * ./paramiko-config.py
