@@ -62,3 +62,7 @@
   * ./paramiko-multi-nopasswdSSH.py
 
   * ./paramiko-config.py
+
+  * ./paramiko-upload.py
+
+  * ./paramiko-download.py
