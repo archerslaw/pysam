@@ -66,3 +66,5 @@
   * ./paramiko-upload.py
 
   * ./paramiko-download.py
+
+  * ./paramiko-sftp-multi-upload.py
