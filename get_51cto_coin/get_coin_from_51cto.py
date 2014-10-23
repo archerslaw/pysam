@@ -66,4 +66,4 @@ class Login:
 if __name__ == '__main__':
     login_51cto = Login()
     login_51cto.open()
-
+    print 'Get coins from 51cto successfully.'
