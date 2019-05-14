@@ -14,7 +14,7 @@ def send_mail(sub,content):
     mail_host="smtp.163.com" 
     #smtp.163.com|pop.163.com
     mail_user="biao060798@163.com" 
-    mail_pass="060798" 
+    mail_pass="xxxxxx" 
     mail_postfix="163.com" 
     ###################### 
     ''' 
